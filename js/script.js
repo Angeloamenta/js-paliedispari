@@ -71,13 +71,13 @@ if(parola == parolaInversa){
 
 
 
-  function inverso(boh) {
+  function inverso(nameInv) {
 
     let parolaInversa = '';
     
 let i = parola.length - 1;
 while (i >= 0) {
-  parolaInversa += boh[i];
+  parolaInversa += nameInv[i];
   i--;
 }
 return parolaInversa;
