@@ -9,10 +9,10 @@
 
 // l'utente sceglie se pari o dispari 
  let pari = prompt(" scegli pari o dispari");
- let tryDis = false;
+ let selezione = false;
 
  if (pari == "dispari") {
-   tryDis = true
+   selezione = true
  }
 
 // l'utente sceglie un numero da 1 a 5 
@@ -38,7 +38,7 @@ console.log(somma);
 //   console.log ("vince il Giocatore");
 // }
 // if con funzioni 
-if (somma % 2 == 1 && tryDis == true) {
+if (somma % 2 == 1 && selezione == true) {
     console.log ("vince il PC");
  } else {
    console.log ("vince il Giocatore");
