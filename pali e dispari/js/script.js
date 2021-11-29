@@ -19,15 +19,38 @@
 let numberUser = parseInt(prompt("scegli un numero da uno a 5"));
 console.log(numberUser);
 
-// genero un numero random per il pc
-let pcNUmber = Math.floor(Math.random() * 5) + 1;
-console.log(pcNUmber);
 
-let somma = (numberUser + pcNUmber);
+// // genero un numero random per il pc
+
+let pcNumber = getRandom(1, 5);
+console.log(pcNumber);
+// let pcNUmber = Math.floor(Math.random() * 5) + 1;
+// console.log(pcNUmber);
+
+// let somma = (numberUser + pcNUmber);
+let somma = sommaNum(numberUser, pcNumber);
 console.log(somma);
-// dispari
+// console.log(somma);
+// // dispari
+// if (somma % 2 == 1 && tryDis == true) {
+//   console.log ("vince il PC");
+// } else {
+//   console.log ("vince il Giocatore");
+// }
+// if con funzioni 
 if (somma % 2 == 1 && tryDis == true) {
-  console.log ("vince il PC");
-} else {
-  console.log ("vince il Giocatore");
+    console.log ("vince il PC");
+ } else {
+   console.log ("vince il Giocatore");
+}
+  
+// prova con funzioni 
+
+function sommaNum(num1, num2) {
+  let somma = (num1 + num2);
+  return somma;
+}
+
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min) ) + min;
 }
